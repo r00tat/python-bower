@@ -4,5 +4,5 @@ This image is intented to run python apps which need bower as a container. This 
 ## running the container
 
 ```
-docker run --rm pwoelfel/python-bower python -v
+docker run --rm paulwoelfel/python-bower python -V
 ```
