@@ -14,6 +14,5 @@ RUN (curl -sL https://deb.nodesource.com/setup_7.x | bash -) && \
         && \
     pip install pycrypto && \
     rm -rf /var/lib/apt/lists/*
-# RUN gcloud components update && gcloud components install app-engine-python kubectl beta gsutil bq
 
 ENV ENDPOINTS_GAE_SDK /usr/lib/google-cloud-sdk
