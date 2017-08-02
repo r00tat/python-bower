@@ -1,4 +1,4 @@
-FROM python:2
+FROM debian:stretch
 MAINTAINER Paul Woelfel <github@frig.at>
 
 RUN (curl -sL https://deb.nodesource.com/setup_7.x | bash -) && \
@@ -10,7 +10,10 @@ RUN (curl -sL https://deb.nodesource.com/setup_7.x | bash -) && \
     apt-get -y install \
         google-cloud-sdk \
         google-cloud-sdk-app-engine-python \
+        git \
+        python \
         python-crypto \
+        python-pip \
         && \
     pip install pycrypto && \
     rm -rf /var/lib/apt/lists/*
